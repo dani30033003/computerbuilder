@@ -1,4 +1,5 @@
 import Image from "next/image";
+import handler from "./pages/api/insertCpus";
 
 export default function Home() {
   return (
