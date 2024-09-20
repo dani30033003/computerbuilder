@@ -1,0 +1,80 @@
+{
+  "id": "5e6eaa04-5229-4832-8f6f-757681aa32f3",
+  "prevId": "2770441b-5f71-40a3-8295-ec65b69642eb",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.cpus": {
+      "name": "cpus",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "price": {
+          "name": "price",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "core_count": {
+          "name": "core_count",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "core_clock": {
+          "name": "core_clock",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "boost_clock": {
+          "name": "boost_clock",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "tdp": {
+          "name": "tdp",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "graphics": {
+          "name": "graphics",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "smt": {
+          "name": "smt",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "sequences": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}
