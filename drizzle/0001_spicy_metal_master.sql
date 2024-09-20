@@ -1,0 +1,1 @@
+ALTER TABLE "cpus" ALTER COLUMN "core_clock" SET DATA TYPE real;
