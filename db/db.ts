@@ -6,11 +6,6 @@ const client = new Client({
     "postgres://postgres:dara3003@localhost:5432/computer_builder"
 });
 
-export async function getDbClient() {
-  try {
-    await client.connect();
-    return drizzle(client);
-  } catch (error) {
-    throw new Error("Database connection failed");
-  }
-}
+await client.connect();
+
+export const db = drizzle(client);

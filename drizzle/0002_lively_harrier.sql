@@ -1,0 +1,1 @@
+ALTER TABLE "cpu-coolers" ALTER COLUMN "color" DROP NOT NULL;

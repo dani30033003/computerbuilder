@@ -1,6 +1,6 @@
 {
-  "id": "c9e6e794-6f5a-42cb-81a3-53c5bc54140c",
-  "prevId": "5e6eaa04-5229-4832-8f6f-757681aa32f3",
+  "id": "59c8e234-a530-480f-a7d7-7b438cf9e7bc",
+  "prevId": "902a60bd-96f2-49c4-a00e-004519a1dc5b",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -24,43 +24,89 @@
           "name": "price",
           "type": "real",
           "primaryKey": false,
-          "notNull": true
+          "notNull": false
         },
         "core_count": {
           "name": "core_count",
           "type": "integer",
           "primaryKey": false,
-          "notNull": true
+          "notNull": false
         },
         "core_clock": {
           "name": "core_clock",
           "type": "real",
           "primaryKey": false,
-          "notNull": true
+          "notNull": false
         },
         "boost_clock": {
           "name": "boost_clock",
           "type": "real",
           "primaryKey": false,
-          "notNull": true
+          "notNull": false
         },
         "tdp": {
           "name": "tdp",
           "type": "integer",
           "primaryKey": false,
-          "notNull": true
+          "notNull": false
         },
         "graphics": {
           "name": "graphics",
           "type": "varchar(255)",
           "primaryKey": false,
-          "notNull": true
+          "notNull": false
         },
         "smt": {
           "name": "smt",
           "type": "boolean",
           "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "public.cpu-coolers": {
+      "name": "cpu-coolers",
+      "schema": "",
+      "columns": {
+        "name": {
+          "name": "name",
+          "type": "varchar(255)",
+          "primaryKey": false,
           "notNull": true
+        },
+        "price": {
+          "name": "price",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "rpm": {
+          "name": "rpm",
+          "type": "real[]",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "noise_level": {
+          "name": "noise_level",
+          "type": "real[]",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "color": {
+          "name": "color",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "size": {
+          "name": "size",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
         }
       },
       "indexes": {},

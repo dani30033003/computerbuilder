@@ -5,36 +5,22 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1726753805536,
-      "tag": "0000_rapid_starhawk",
+      "when": 1728306444955,
+      "tag": "0000_bent_senator_kelly",
       "breakpoints": true
     },
     {
       "idx": 1,
       "version": "7",
-      "when": 1726860372262,
-      "tag": "0001_spicy_metal_master",
+      "when": 1728306517986,
+      "tag": "0001_cooing_lake",
       "breakpoints": true
     },
     {
       "idx": 2,
       "version": "7",
-      "when": 1726860528586,
-      "tag": "0002_wandering_maria_hill",
-      "breakpoints": true
-    },
-    {
-      "idx": 3,
-      "version": "7",
-      "when": 1726860584702,
-      "tag": "0003_tranquil_gateway",
-      "breakpoints": true
-    },
-    {
-      "idx": 4,
-      "version": "7",
-      "when": 1726860659584,
-      "tag": "0004_old_wild_pack",
+      "when": 1728306621216,
+      "tag": "0002_lively_harrier",
       "breakpoints": true
     }
   ]

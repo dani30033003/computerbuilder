@@ -1,6 +1,9 @@
 import { defineConfig } from "drizzle-kit";
 export default defineConfig({
-  schema: "./db/schema/cpu.ts",
+  schema: [ 
+    "./db/schema/cpu.ts",
+    "./db/schema/cpu-cooler.ts"
+  ],
   out: "./drizzle",
   dialect: "postgresql",
   dbCredentials: {

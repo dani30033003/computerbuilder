@@ -1,1 +1,0 @@
-ALTER TABLE "cpus" ALTER COLUMN "graphics" DROP NOT NULL;

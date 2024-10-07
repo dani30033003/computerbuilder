@@ -1,4 +1,4 @@
-import { getDbClient } from "@/db/db";
+import { db} from "@/db/db";
 import { Cpu, cpus } from "@/db/schema/cpu";
 import fs from "fs";
 import path from "path";
@@ -20,7 +20,6 @@ export async function GET(request: Request) {
   }));
 
   try {
-    const db = await getDbClient();
     const results = await db.insert(cpus).values(rowsToInsert).returning();
     return Response.json(results);
   } catch (e) {
